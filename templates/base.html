@@ -29,8 +29,8 @@
                         </li>
                         {% if user.is_authenticated %}
                         <li class="nav-item">
-                            <a href="#" class="nav-link px-2 link-dark">+ New</a>
-                        </li>
+                            <a href="{% url 'article_new' %}" class="nav-link px-2 link-dark">+ New</a>
+                        </li>                        
                     </ul>
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item dropdown">
@@ -76,3 +76,4 @@
                 crossorigin="anonymous"></script>
     </body>
 </html>
+
